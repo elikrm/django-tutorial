@@ -1,0 +1,25 @@
+{% load static %}
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>She Codes News</title>
+        <meta name="description" content="">
+        <meta name="author" content="Elnaz Karimpour">
+        <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    </head>
+
+    <body>
+        <hr>
+        <header>
+            <h1>Poll created by Elnaz</h1>
+        </header>
+        <hr>
+    
+        {% block main_content %}{% endblock %}
+        <!-- content blocks here -->
+        {% include 'polls/footer.html' %}
+    </body>
+</html>
